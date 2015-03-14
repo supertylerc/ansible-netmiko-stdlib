@@ -9,8 +9,22 @@ Ansible modules using Netmiko.
 
 ## Usage
 
+Clone the repository:
+
+```bash
+mkdir ~/git
+cd ~/git
+git clone https://github.com/supertylerc/ansible-netmiko-stdlib
+```
+
 Add the following line to you `${HOME}/.bashrc`, `${HOME}/.zshrc`, or the `rc`
 file of whatever shell you're using.
+
+```bash
+source "${HOME}/git/ansible-netmiko-stdlib/env-setup"
+```
+
+> This assumes you cloned the repository to `${HOME}/git/ansible-netmiko-stdlib`.
 
 ## Support
 
