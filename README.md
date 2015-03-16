@@ -30,6 +30,10 @@ In order to use this module, you must set the connection to local.  You can
 do this with the `connection: local` setting on plays/playbooks, or you can
 set the `ansible_connection=local` connection type in the `hosts` file.
 
+Check out
+[this blog post](http://blog.tylerc.me/automation/2015/03/16/ansible-netmiko-stdlib/)
+for an example of how it can be used.
+
 ## Support
 
 Open GitHub issues.
