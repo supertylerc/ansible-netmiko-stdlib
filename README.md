@@ -26,6 +26,10 @@ source "${HOME}/git/ansible-netmiko-stdlib/env-setup"
 
 > This assumes you cloned the repository to `${HOME}/git/ansible-netmiko-stdlib`.
 
+In order to use this module, you must set the connection to local.  You can
+do this with the `connection: local` setting on plays/playbooks, or you can
+set the `ansible_connection=local` connection type in the `hosts` file.
+
 ## Support
 
 Open GitHub issues.
