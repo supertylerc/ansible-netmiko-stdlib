@@ -10,13 +10,15 @@ An Ansible module for using Netmiko to configure network devices via SSHv2.
 
 ## Usage
 
-Clone the repository from GitHub to a suitable location on your host (the user's home directory is used in this example):
+Clone the repository from GitHub to a suitable location on your host (a new `git` directory is created within the user's home directory in this example):
 
 ```bash
 mkdir ~/git
 cd ~/git
 git clone https://github.com/supertylerc/ansible-netmiko-stdlib
 ```
+
+The `ansible-netmiko-stdlib` directory will be automatically created.
 
 Add the following line to your `~/.bashrc`, `~/.zshrc`, or the `rc` file of whatever shell you're using:
 
