@@ -6,7 +6,7 @@ An Ansible module for using Netmiko to configure network devices via SSHv2.
 
 * [Ansible](https://github.com/ansible/ansible) - A simple IT automation platform
 * [Netmiko](https://github.com/ktbyers/netmiko) - A multi-vendor Python library used to simplify Paramiko SSH connections to network devices
-** [Paramiko] (https://github.com/paramiko/paramiko) - A native Python SSHv2 protocol library
+ * [Paramiko] (https://github.com/paramiko/paramiko) - A native Python SSHv2 protocol library
 
 ## Usage
 
