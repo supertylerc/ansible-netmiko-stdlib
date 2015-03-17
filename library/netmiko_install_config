@@ -113,8 +113,7 @@ def install_config(module, dev):
         if not dev.check_enable_mode():
             dev.enable()
         # NetMiko automatically enters config mode, but not enable mode
-        commands = dev.process_config_file(config_file=config_file)
-        dev.send_config_set(config_commands=commands, commit=True)
+        dev.send_config_from_file(config_file=config_file)
         results['changed'] = True
     except Exception as err:
         logging.error("Exception: %s", err.message)
@@ -176,7 +175,7 @@ def load(module):
                 except Exception as err:
                     logging.error("Exception: %s", err.message)
                     raise err
-                    
+
     module.exit_json(**results)
 
 
