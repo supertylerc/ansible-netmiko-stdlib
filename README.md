@@ -1,15 +1,16 @@
 # ansible-netmiko-stdlib
 
-Ansible modules using Netmiko.
+An Ansible module for using Netmiko to configure network devices via SSHv2.
 
 ## Prerequisites
 
-* [Ansible](https://github.com/ansible/ansible)
-* [Netmiko](https://github.com/ktbyers/netmiko)
+* [Ansible](https://github.com/ansible/ansible) - A simple IT automation platform
+* [Netmiko](https://github.com/ktbyers/netmiko) - A multi-vendor Python library used to simplify Paramiko SSH connections to network devices
+ * [Paramiko] (https://github.com/paramiko/paramiko) - A native Python SSHv2 protocol library
 
 ## Usage
 
-Clone the repository:
+Clone the repository from GitHub to a suitable location on your host (a new `git` directory is created within the user's home directory in this example):
 
 ```bash
 mkdir ~/git
@@ -17,30 +18,25 @@ cd ~/git
 git clone https://github.com/supertylerc/ansible-netmiko-stdlib
 ```
 
-Add the following line to you `${HOME}/.bashrc`, `${HOME}/.zshrc`, or the `rc`
-file of whatever shell you're using.
+The `ansible-netmiko-stdlib` directory will be automatically created.
+
+Add the following line to your `~/.bashrc`, `~/.zshrc`, or the `rc` file of whatever shell you're using:
 
 ```bash
-source "${HOME}/git/ansible-netmiko-stdlib/env-setup"
+source "~/git/ansible-netmiko-stdlib/env-setup"
 ```
 
-> This assumes you cloned the repository to `${HOME}/git/ansible-netmiko-stdlib`.
+> This assumes you cloned the repository to `~/git/ansible-netmiko-stdlib` as detailed earlier.
 
-In order to use this module, you must set the connection to local.  You can
-do this with the `connection: local` setting on plays/playbooks, or you can
-set the `ansible_connection=local` connection type in the `hosts` file.
+In order to use this module, you must set the connection to local within Ansible.  You can do this with the `connection: local` setting on plays/playbooks, or you can set the `ansible_connection=local` connection type in the `hosts` file.
 
 Check out
-[this blog post](http://blog.tylerc.me/automation/2015/03/16/ansible-netmiko-stdlib/)
-for an example of how it can be used.
+[this blog post](http://blog.tylerc.me/automation/2015/03/16/ansible-netmiko-stdlib/) for an example of how this module be used.
 
 ## Roadmap
 
-See
-[the milestones](https://github.com/supertylerc/ansible-netmiko-stdlib/milestones)
-for details on the roadmap.  Issues get assigned to milestones as they are opened
-or investigated.  Milestones have target release days (generally every 2 weeks
-until v1.0.0).
+See [the milestones](https://github.com/supertylerc/ansible-netmiko-stdlib/milestones)
+for details on the roadmap.  Issues get assigned to milestones as they are opened or investigated.  Milestones have target release days (generally every 2 weeks until v1.0.0).
 
 ## Support
 
